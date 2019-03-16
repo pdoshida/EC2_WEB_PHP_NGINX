@@ -20,3 +20,4 @@ cp nginx.conf /etc/nginx/nginx.conf
 systemctl restart nginx
 systemctl restart php-fpm
 
+echo http://`curl ifconfig.io`/phpinfo.php
