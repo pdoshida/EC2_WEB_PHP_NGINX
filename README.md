@@ -12,8 +12,7 @@
 
 ## 手順
 ```
-ssh ec2-user@${globalIp} -i ${pem}
-sudo -i
+sudo su -
 yum install git -y
 # 公開鍵配置
 ssh-keygen -t rsa
