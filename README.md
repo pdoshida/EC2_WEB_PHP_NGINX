@@ -15,8 +15,8 @@
 ssh ec2-user@${globalIp} -i ${pem}
 sudo -i
 yum install git -y
-ssh-keygen -t rsa
 # 公開鍵配置
+ssh-keygen -t rsa
 git clone git@github.com:pdoshida/EC2_WEB_PHP_NGINX.git
 cd EC2_WEB_PHP_NGINX
 ./install.sh
